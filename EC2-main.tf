@@ -56,6 +56,8 @@ resource "aws_instance" "OMS-EC2-Webserver" {
     Name = "OMS-EC2-Webserver"
   }
 }
+
+
 # Resource-8: Creat EC2 Ubuntu  Web Server
 resource "aws_instance" "OMS-EC2-Webserver" {
   ami           = "ami-HERE"
