@@ -50,7 +50,7 @@ resource "aws_instance" "OMS-EC2-Webserver" {
   key_name      = "xxx"
   subnet_id     = aws_subnet.OMS-VPC-Pub-sbn.id
   vpc_security_group_ids = [aws_security_group.OMS-EC2-Webserver-SG.id]
-  count                     = "3"
+  count                     = "1"
 
   tags = {
     Name = "OMS-EC2-Webserver"
